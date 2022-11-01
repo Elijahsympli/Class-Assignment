@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ArrayCheckValue {
 public static void main(String args[]) {
-
+int l=0;
   int a[]={2,1,3,6,7};
   System.out.println("Element of an array:");
   for(int i=0;i<a.length;i++)
@@ -16,8 +16,11 @@ public static void main(String args[]) {
   for(int i=0;i<a.length;i++) {
 	  if(a[i]==src) {
 		  System.out.println(a[i]+" is present in an array");
+		  l++;
 	  }
   }
+  if(l==0) 
+	  System.out.println(src+" is not present in an array");
   
 }
 }
