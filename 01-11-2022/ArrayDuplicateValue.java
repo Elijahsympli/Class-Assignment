@@ -15,6 +15,7 @@ public class ArrayDuplicateValue {
 		  for(int i=j+1;i<a.length;i++) {
 			  if(a[i]==a[j]) {
 				  System.out.println(a[i]+" is the duplicate value present in an array");
+				  break;
 			  }
 		  }
 		  }
